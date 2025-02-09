@@ -13,7 +13,7 @@ router.use(
 
 router.get("/",(req,res)=>{
     res.json({
-        message:"Welcome to the users route"
+        message:"Welcome to the users route its working fine"
     });
 }
 )
