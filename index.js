@@ -7,15 +7,6 @@ const app = express();
 app.use("/api/users",users)
 app.use(cors());
 
-app.use(
-    cors({
-      origin: 'http://localhost:3002', // Allow only this origin
-      methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allow only these methods
-      allowedHeaders: ['Content-Type', 'Authorization'], // Allow only these headers
-      credentials: true, // Allow cookies and credentials
-    })
-  );
-
   app.use(
     cors({
       origin: 'https://fullstack-notes-app-frontend.vercel.app', // Allow only this origin
